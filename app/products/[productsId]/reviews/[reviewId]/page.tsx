@@ -9,9 +9,9 @@ const ReviewDetails = async ({
   if (reviewId > "60") {
     redirect("/");
   }
-  if (reviewId === "50") {
-    throw Error("50 is Error");
-  }
+  // if (reviewId === "50") {
+  //   throw new Error("50 is Error");
+  // }
 
   return (
     <div>
