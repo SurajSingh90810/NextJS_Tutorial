@@ -6,7 +6,12 @@ export const metadata: Metadata = {
   description: "About MetaData",
 };
 
-const MetaData = () => {
+const MetaData = async () => {
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, 3000);
+  });
   return <div>MetaData</div>;
 };
 
