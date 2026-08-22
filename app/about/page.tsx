@@ -1,7 +1,7 @@
+import { cookies } from "next/headers";
 import React from "react";
 
-const ABout = () => {
-  return <div>ABout</div>;
-};
-
-export default ABout;
+export default async function About() {
+  const cookieData = await cookies();
+  return <div>About{new Date().toLocaleDateString()}</div>;
+}
